@@ -1,26 +1,6 @@
 # Newton-Ralphson-for-square-root-calculation
 
-// Example program
-#include <iostream>
-#include <cmath>
-using namespace std;
+Newton Ralphson is a powerful algorithm to find the square root of a rational number. It has a fast converging rate compared to traditional searching algorithms such as bisections.
 
-double squareRoot(double x);
-
-int main(int argc, char *argv[]){
-    double number;
-    cin >> number;
-    number = squareRoot(number);
-    cout << number << '\n';   
-    }
-    
-double squareRoot(double x){
-   double y0 = x/2;
-   double y1 = 0;
-   while (abs(y0 - y1)> 0.00000000001){
-       y1 = y0;
-       y0 = y0 - ((y0*y0 - x)/(2*y0));
-       cout << y0 << " ,  "<< y1 << '\n';
-       }
-   return y0; 
-    }
+Function for square root of a:
+f(n) = n^2 - a;
